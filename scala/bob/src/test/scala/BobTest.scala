@@ -5,17 +5,14 @@ class BobTest extends FunSuite with Matchers {
 
 
   test("stating something") {
-    pending
     Bob.response("Tom-ay-to, tom-aaaah-to.") should be ("Whatever.")
   }
 
   test("shouting") {
-    pending
     Bob.response("WATCH OUT!") should be ("Whoa, chill out!")
   }
 
   test("shouting gibberish") {
-    pending
     Bob.response("FCECDFCAAB") should be ("Whoa, chill out!")
   }
 
@@ -32,27 +29,22 @@ class BobTest extends FunSuite with Matchers {
   }
 
   test("talking forcefully") {
-    pending
     Bob.response("Let's go make out behind the gym!") should be ("Whatever.")
   }
 
   test("using acronyms in regular speech") {
-    pending
     Bob.response("It's OK if you don't want to go to the DMV.") should be ("Whatever.")
   }
 
   test("forceful question") {
-    pending
     Bob.response("WHAT THE HELL WERE YOU THINKING?") should be ("Calm down, I know what I'm doing!")
   }
 
   test("shouting numbers") {
-    pending
     Bob.response("1, 2, 3 GO!") should be ("Whoa, chill out!")
   }
 
   test("only numbers") {
-    pending
     Bob.response("1, 2, 3") should be ("Whatever.")
   }
 
@@ -61,17 +53,14 @@ class BobTest extends FunSuite with Matchers {
   }
 
   test("shouting with special characters") {
-    pending
     Bob.response("ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!") should be ("Whoa, chill out!")
   }
 
   test("shouting with no exclamation mark") {
-    pending
     Bob.response("I HATE YOU") should be ("Whoa, chill out!")
   }
 
   test("statement containing question mark") {
-    pending
     Bob.response("Ending with ? means a question.") should be ("Whatever.")
   }
 
@@ -96,14 +85,12 @@ class BobTest extends FunSuite with Matchers {
   }
 
   test("multiple line question") {
-    pending
     Bob.response("""
 Does this cryogenic chamber make me look fat?
 no""") should be ("Whatever.")
   }
 
   test("starting with whitespace") {
-    pending
     Bob.response("         hmmmmmmm...") should be ("Whatever.")
   }
 
@@ -117,7 +104,6 @@ no""") should be ("Whatever.")
   }
 
   test("non-question ending with whitespace") {
-    pending
     Bob.response("This is a statement ending with whitespace      ") should be ("Whatever.")
   }
 }
